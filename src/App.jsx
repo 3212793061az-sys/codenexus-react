@@ -13,7 +13,7 @@ import Api from './pages/Api'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/codenexus-react">
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />
