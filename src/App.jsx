@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import CatPet from './components/CatPet'
 import Login from './pages/Login'
 import Home from './pages/Home'
 import Python from './pages/Python'
@@ -14,6 +15,7 @@ import Api from './pages/Api'
 function App() {
   return (
     <BrowserRouter basename="/codenexus-react">
+      <CatPet />
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />
